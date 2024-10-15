@@ -1,0 +1,1 @@
+<img src="{{ asset('images/naruto-logo-revisi-gede.png') }}" style="height:150px; width: auto;" alt="Your Logo">
