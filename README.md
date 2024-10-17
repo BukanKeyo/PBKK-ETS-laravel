@@ -8,6 +8,9 @@
 ## Plan
 **WeaBook** adalah platform ramah pengguna yang dirancang bagi para penggemar anime untuk berbagi pemikiran dan pendapat mereka tentang berbagai judul anime. Dengan WeaBook, pengguna dapat dengan mudah **membuat**, **memperbaharui**, **membaca**, dan **menghapus** ulasan untuk kartun / anime Jepang. Situs web ini memungkinkan pengguna untuk memilih dari daftar judul anime, memilih genre yang paling sesuai dengan anime tersebut, dan menuliskan ulasan pribadi mereka serta memberikan ratingnya.
 
+## Link Youtube
+https://youtu.be/oug8m5S2bAA 
+
 ## Result
 ### Register Page
 ![Screenshot 2024-10-16 170248](https://github.com/user-attachments/assets/8c4110a3-7429-4a7d-bf93-50bed8c62095)
