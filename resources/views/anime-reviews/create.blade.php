@@ -20,23 +20,9 @@
                             <option value="{{ $title->id }}">{{ $title->name }}</option>
                             @endforeach
                             <x-input-error class="mt-2" :messages="$errors->get('title_id')" />
-                        </select>
-                         </div>
-
-                        {{-- <div>
-                            <x-input-label for="title" value="Title" />
-                            <select id="title" name="title_id" class="mt-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" onchange="toggleCustomTitle(this)">
-                                @foreach ($titles as $title)
-                                    <option value="{{ $title->id }}">{{ $title->name }}</option>
-                                @endforeach
-                                <option value="other">Others</option>
                             </select>
-                            <!-- Custom title input -->
-                            <input type="text" id="custom_title" name="custom_title" class="mt-2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 hidden" placeholder="Enter new title" />
-                            <x-input-error class="mt-2" :messages="$errors->get('title_id')" />
-                        </div> --}}
+                        </div>
                         
-
                         <div>
                             <x-input-label for="genre" value="Genre" />
                             <select id="genre"
@@ -70,14 +56,3 @@
         </div>
     </div>
 </x-app-layout>
-
-{{-- <script>
-    function toggleCustomTitle(select) {
-        const customTitleInput = document.getElementById('custom_title');
-        if (select.value === 'other') {
-            customTitleInput.classList.remove('hidden');
-        } else {
-            customTitleInput.classList.add('hidden');
-        }
-    }
-</script> --}}

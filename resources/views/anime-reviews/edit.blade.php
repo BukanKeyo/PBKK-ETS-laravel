@@ -45,22 +45,6 @@
                             <x-input-error class="mt-2" :messages="$errors->get('rating')" />
                         </div>
 
-                        <!-- <div>
-                            <x-input-label for="image" value="Image" />
-                            <label class="block mt-2">
-                                <span class="sr-only">Choose image</span>
-                                <input type="file" id="image" name="image"
-                                    class="block w-full text-sm text-slate-500
-                                    file:mr-4 file:py-2 file:px-4
-                                    file:rounded-full file:border-0
-                                    file:text-sm file:font-semibold
-                                    file:bg-violet-50 file:text-violet-700
-                                    hover:file:bg-violet-100
-                                " />
-                            </label>
-                            <x-input-error class="mt-2" :messages="$errors->get('image')" />
-                        </div> -->
-
                         <div class="flex items-center gap-4">
                             <x-primary-button>{{ __('Save') }}</x-primary-button>
                         </div>

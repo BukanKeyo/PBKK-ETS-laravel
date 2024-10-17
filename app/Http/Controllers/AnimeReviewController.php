@@ -34,9 +34,6 @@ class AnimeReviewController extends Controller
             'rating' => 'required|numeric|between:0,10',
             'title_id' => 'required|unique:anime_reviews,title_id',
             'genre_id' => 'required',
-        ], [
-            'title_id.unique' => 'The anime has already been reviewed.',
-            //'image' => 'image|mimes:pdf,jpeg,png,jpg|max:10048',
         ]);
 
         $validatedData = 
@@ -46,11 +43,6 @@ class AnimeReviewController extends Controller
             'title_id' => $request->title_id,
             'genre_id' => $request->genre_id,
         ];
-
-        // if ($request->hasFile('image')) {
-        //     $imagePath = $request->file('image')->store('prescriptions', 'public');
-        //     $validatedData['image'] = $imagePath;
-        // }
 
         $create = AnimeReview::create($validatedData);
         
@@ -84,18 +76,9 @@ class AnimeReviewController extends Controller
             'rating' => 'required|numeric|between:0,10',
             'title_id' => 'required',
             'genre_id' => 'required',
-            //'image' => 'required|image|mimes:pdf,jpeg,png,jpg|max:10048',
         ];
 
         $validatedData = $request->validate($rules);
-
-        // if ($request->hasFile('image')) {
-        //     $request->validate([
-        //         'image' => 'required|image|mimes:pdf,jpeg,png,jpg|max:10048',
-        //     ]);
-        //     $imagePath = $request->file('image')->store('prescriptions', 'public');
-        //     $validatedData['image'] = $imagePath;
-        // }
 
         $update = AnimeReview::where('id', $anime_review->id)->update($validatedData);
 
